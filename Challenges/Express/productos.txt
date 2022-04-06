@@ -1,5 +1,0 @@
-[
-    {"name":"Product1","price":10,"category":"Cat1"},
-    {"name":"Product2","price":20,"category":"Cat2"},
-    {"name":"Product3","price":100,"category":"Cat3"},
-]

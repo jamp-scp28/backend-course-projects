@@ -66,57 +66,58 @@ class Container{
 
 }
 
+module.exports = Container
 
-//Initialize class and pass file
-let ct = new Container('datafile.json')
-//Create sample products
-let product1 = {'name':'TV','price':1000, 'category':'technology'}
-let product2 = {'name':'SmartWatch','price':600,'category':'technology'}
-let product3 = {'name':'GTX-1000','price':900,'category':'components'}
+// //Initialize class and pass file
+// let ct = new Container('datafile.json')
+// //Create sample products
+// let product1 = {'name':'TV','price':1000, 'category':'technology'}
+// let product2 = {'name':'SmartWatch','price':600,'category':'technology'}
+// let product3 = {'name':'GTX-1000','price':900,'category':'components'}
 
-/** METHOD NUMBER 1 
- * SAVE
-*/
+// /** METHOD NUMBER 1 
+//  * SAVE
+// */
 
-//Save products
-id1 = ct.save(product1);
-id2 = ct.save(product2);
-id3 = ct.save(product3);
-//Print IDS of saved products
-console.log('Printing IDs of objects \n');
-console.log(id1 + '\n' + id2 + '\n' + id3 + '\n');
+// //Save products
+// id1 = ct.save(product1);
+// id2 = ct.save(product2);
+// id3 = ct.save(product3);
+// //Print IDS of saved products
+// console.log('Printing IDs of objects \n');
+// console.log(id1 + '\n' + id2 + '\n' + id3 + '\n');
 
 
-/** METHOD NUMBER 2 
- * GET BY ID
-*/
-obj = ct.getById(3);
-//Print Object
-console.log('Printing object retrieved by id \n');
-console.log(obj);
-console.log('\n');
+// /** METHOD NUMBER 2 
+//  * GET BY ID
+// */
+// obj = ct.getById(3);
+// //Print Object
+// console.log('Printing object retrieved by id \n');
+// console.log(obj);
+// console.log('\n');
 
-/** METHOD NUMBER 3 
- * GET ALL
-*/
-objects = ct.getAll();
-//Print Object
-console.log('Printing all products \n');
-console.log(objects);
-console.log('\n');
+// /** METHOD NUMBER 3 
+//  * GET ALL
+// */
+// objects = ct.getAll();
+// //Print Object
+// console.log('Printing all products \n');
+// console.log(objects);
+// console.log('\n');
 
-/** METHOD NUMBER 4
- * DELETE BY ID
-*/
-console.log('Deleting object...');
-ct.deleteById(2);
-console.log('Printing objects after deleting... \n');
-console.log(ct.productData);
+// /** METHOD NUMBER 4
+//  * DELETE BY ID
+// */
+// console.log('Deleting object...');
+// //ct.deleteById(2);
+// console.log('Printing objects after deleting... \n');
+// console.log(ct.productData);
 
-/** METHOD NUMBER 5
- * DELETE ALL
-*/
-console.log('Deleting ALL objects...');
-ct.deleteAll();
-console.log('Printing data after deleting... \n');
-console.log(ct.productData);
+// /** METHOD NUMBER 5
+//  * DELETE ALL
+// */
+// console.log('Deleting ALL objects...');
+// //ct.deleteAll();
+// console.log('Printing data after deleting... \n');
+// console.log(ct.productData);

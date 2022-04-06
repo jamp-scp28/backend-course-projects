@@ -1,0 +1,18 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "expressTesting",
+  "main": "Express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "backend"
+  ],
+  "author": "Jorge Molano",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
