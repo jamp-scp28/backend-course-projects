@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>App</title>
+</head>
+<body class="container">
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+    
+    <main>
+        <div class="jumbotron">
+            <h1>Products</h1>
+
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Thumbnail</th>
+                </tr>
+                <% for(var i = 0; i < products.length; i++) {%>
+                <tr>
+                    <td><%= products[i].title %></td>
+                    <td><%= products[i].price %></td>
+                    <td><%= products[i].thumbnail %></td>
+                </tr>
+                <% } %>
+
+            </table>
+        </div>
+    </main>
+
+</body>
+</html>

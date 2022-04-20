@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Apps</title>
+</head>
+<body class="container">
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+    
+    <main>
+        <div class="jumbotron">
+            <h1>Add Product</h1>
+
+            <form id="addProduct" action="products" method="post">
+                <div>
+                    <label for="title">Title</label>
+                    <input name="title" id="title" type="text">
+                </div>
+                <div>
+                    <label for="price">Price</label>
+                    <input name="price" id="price" type="number">
+                </div>
+                <div>
+                    <label for="thumbnail">Thumbnail URL</label>
+                    <input name="thumbnail" id="thumbnail" type="text">
+                </div>
+                <button type="submit" id="btnSubmit">
+                    Add Record
+                </button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>

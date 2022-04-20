@@ -1,0 +1,10 @@
+body
+  form(action='/products', method='POST')
+    p
+      | title: 
+      input(type='text', name='title')
+      |          price: 
+      input(type='number', name='price')
+      |          thumbnail: 
+      input(type='text', name='thumbnail')
+    input(type='submit', value='Submit')

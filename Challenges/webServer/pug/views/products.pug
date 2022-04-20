@@ -1,0 +1,23 @@
+doctype html
+
+html(lang='en')
+    head
+        title='Products'
+    body 
+        h1(style="color: blue")="Products"
+
+        ul
+            li
+                a(href="/") Add Product
+                a(href="/products") Products
+
+        table.table.table-striped
+            tr
+                th Title
+                th Price
+                th Thumbnail
+        each val in products
+            tr
+                td= val.title
+                td= val.price
+                td= val.thumbnail
