@@ -1,9 +1,10 @@
-##### 0. Create Database
---------
+# 0. Create Database
+
 use ecommerce
 
-##### 1. Create Collections and Documents
 --------
+
+# 1. Create Collections and Documents
 
 db.createCollection('products')
 db.products.insertMany([
@@ -33,48 +34,52 @@ db.messages.insertMany([
     {_id:10,email:"seller@gmail.com",message:"With pleasure, bye."},
 ])
 
-##### 2. Define keys and custom prices list
 --------
+
+# 2. Define keys and custom prices list
 
 Done in step No. 1
 
-##### 3. List Documents in Each Collection
 --------
+
+# 3. List Documents in Each Collection
 
 db.products.find()
 db.messages.find()
 
 
-##### 4. Show the Number of Documents per Collection
 --------
+
+# 4. Show the Number of Documents per Collection
 
 db.products.estimatedDocumentCount()
 db.messages.estimatedDocumentCount()
 
 
-##### 5. CRUD Operations
 --------
 
-### a. Add New Product:
+# 5. CRUD Operations
+
+#### a. Add New Product:
 
 db.products.insert({_id:11,title:"Backpack", price:420,thumbnail:"product11.jpg"})
 
-### b. Product Search:
+#### b. Product Search:
 
-#I Products with price less than 1000
+##### I Products with price less than 1000
 db.products.find({"price":{$lt: 1000}})
 
-#II Products with price between 1000 and 3000
+##### II Products with price between 1000 and 3000
 db.products.find({$and: [{"price":{$gt: 1000}},{"price":{$lt: 3000}}]})
 
-#III Products with price over 3000
+##### III Products with price over 3000
 db.products.find({"price":{$gt: 3000}})
 
-$IV Get the name of the third cheapest product
+##### IV Get the name of the third cheapest product
 db.products.find().sort({price: 1}).limit(1).skip(2)
 
 
-### b. Add Stock Field with a Default of 100 for each product
+#### c. Add Stock Field with a Default of 100 for each product
 
 db.products.update(
     {},
@@ -84,7 +89,7 @@ db.products.update(
 )
 
 
-### c. Change stock of products above 4000
+#### d. Change stock of products above 4000
 
 db.products.update(
     {price: {$gt: 4000}},
@@ -93,12 +98,13 @@ db.products.update(
     true
 )
 
-### d. Delete Products with Price Under 10000
+#### e. Delete Products with Price Under 10000
 
 db.products.deleteMany({price: {$lt: 1000}})
 
-##### 6. Create Pepe user
 --------
+
+# 6. Create Pepe user
 
 use admin
 db.createUser({user:"Pepe",pwd:"123",roles:[{role:"read",db:"ecommerce"}]})
