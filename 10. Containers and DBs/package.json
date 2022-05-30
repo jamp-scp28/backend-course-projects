@@ -1,0 +1,17 @@
+{
+  "name": "10.-containers-and-dbs",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JorgeMolano",
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^9.8.2",
+    "firebase-admin": "^10.2.0",
+    "mongoose": "^6.3.4"
+  }
+}
