@@ -1,6 +1,4 @@
-import mongoose, { mongo } from "mongoose";
-
-const carsColletion = "cars";
+import mongoose from "mongoose";
 
 const carsSchema = new mongoose.Schema({
     timestamp: {type: Date,required: true, max: 100},
@@ -8,4 +6,5 @@ const carsSchema = new mongoose.Schema({
     product: {type: String,required: true, max: 10000},
 });
 
-export const cars = mongoose.model(carsColletion, carsSchema);
+
+export default carsSchema;
