@@ -1,7 +1,9 @@
-var admin = require("firebase-admin");
+import admin from "firebase-admin";
 import mongoose from "mongoose";
+import productSchema from "./models/product.js";
+import carsSchema from "./models/cars.js";
 
-var serviceAccount = require("./secret/backendcourse-9bfcf-firebase-adminsdk-qmnkb-3e839f2ebd.json");
+import serviceAccount from "./secret/backendcourse-9bfcf-firebase-adminsdk-qmnkb-3e839f2ebd.json" assert {type: "json"};
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
@@ -9,14 +11,11 @@ admin.initializeApp({
 
 console.log('Connected to database...');
 
-firebaseConnect();
-
 async function firebaseConnect(){
     const db = admin.firestore();
     const query = db.collection("ecommerce");
 }
 
-mongoConnect();
 
 async function mongoConnect(){
     //connect to DB
@@ -26,8 +25,17 @@ async function mongoConnect(){
             useNewUrlParser: true,
             useUnifiedTopology: true
         })
+        
+        rta.model("products",productSchema);
+        rta.model("cars",carsSchema);
+
         console.log("Database connected.");
+        return rta;
+        
     } catch(err){
         console.log(err);
+        return err;
     }
 }
+
+export default {mongoConnect, firebaseConnect}

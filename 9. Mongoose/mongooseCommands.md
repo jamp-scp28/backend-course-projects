@@ -1,4 +1,4 @@
-# 0. Create Database
+ 0. Create Database
 
 use ecommerce
 
@@ -8,16 +8,14 @@ use ecommerce
 
 db.createCollection('products')
 db.products.insertMany([
-    {_id:1,title:"Smart TV", price:120,thumbnail:"product1.jpg"},
-    {_id:2,title:"Smart Watch", price:3000,thumbnail:"product2.jpg"},
-    {_id:3,title:"Sofa", price:2500,thumbnail:"product3.jpg"},
-    {_id:4,title:"Speaker", price:1800,thumbnail:"product4.jpg"},
-    {_id:5,title:"Smartphone", price:2150,thumbnail:"product5.jpg"},
-    {_id:6,title:"Mouse", price:900,thumbnail:"product6.jpg"},
-    {_id:7,title:"Keyboard", price:785,thumbnail:"product7.jpg"},
-    {_id:8,title:"Computer", price:500,thumbnail:"product8.jpg"},
-    {_id:9,title:"Table", price:680,thumbnail:"product9.jpg"},
-    {_id:10,title:"Hearphones", price:350,thumbnail:"product10.jpg"},
+    {_id:1,timestamp:new ISODate(),name:"Smart TV",description:"none",code:"123",stock:100,price:2000,photo:"image.jpg"},
+   
+    {_id:2,timestamp:new ISODate(),name:"Smart TV",description:"none",code:"123",stock:100,price:2000,photo:"image.jpg"},
+   
+    {_id:3,timestamp:new ISODate(),name:"Smart TV",description:"none",code:"123",stock:100,price:2000,photo:"image.jpg"},
+   
+    {_id:4,timestamp:new ISODate(),name:"Smart TV",description:"none",code:"123",stock:100,price:2000,photo:"image.jpg"}
+    
 ])
 
 db.createCollection('messages')
