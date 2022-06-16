@@ -1,16 +1,18 @@
 import mongoose from "mongoose";
 
-class mongoCRUD{
+export class mongoCRUD{
 
-    constructor(modelName){
+    modelName: any;
+
+    constructor(modelName: any){
         this.modelName = modelName;
         console.log("printing model from mongo");
         console.log(modelName);
     }
 
-    getData(func){
+    getData(func:Function){
         let data = [];
-        this.modelName.find({}, function(err,result){
+        this.modelName.find({}, function(err:String,result: String){
             if (err){
                 console.log(err);
             }else {
@@ -19,25 +21,23 @@ class mongoCRUD{
         });
     }
 
-    insertRecord(data){
+    insertRecord(data: any){
         const newRecord = data;
         const saveModel = this.modelName(newRecord);
         let dataSaved = saveModel.save();
         console.log('Record saved...');
     }
 
-    updateRecord(id,newData){
+    updateRecord(id: number,newData: any){
         let Update = this.modelName.updateOne({_id: id},{
             $set: newData
         })
         console.log('Record updated...');
     }
 
-    deleteRecord(id){
-        let dataDelete = this.modelName.deleteOne({_id: id});
+    deleteRecord(id: number){
+        let dataDelete = this.modelName.deleteOne({id: id});
         console.log("Record deleted...");
     }
 
 }
-
-export default mongoCRUD;
