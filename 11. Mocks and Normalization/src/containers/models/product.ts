@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const productSchema = new mongoose.Schema({
+export const productSchema = new mongoose.Schema({
     timestamp: {type: Date, required: true},
     name: {type: String, required: true, max: 200},
     description: {type: String, required: true, max: 500},
@@ -9,6 +9,3 @@ const productSchema = new mongoose.Schema({
     price: {type: Number, required: true, max: 10000},
     photo: {type: String, required: true, max: 10000},
 })
-
-
-export default productSchema;
