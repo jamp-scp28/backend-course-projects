@@ -2,7 +2,7 @@
 
 > ## 1. PROFILER ON API ENDPOINT: API/INFO
 
-![profiler](file:///home/jorgem/Pictures/profiler.png)
+![profiler](https://raw.githubusercontent.com/jamp-scp28/backendCourse/master/16.%20Log/results/profiler.png)
 
 > ## 1.1. ARTILLERY RESULTS
 
@@ -60,18 +60,19 @@ vusers.session_length:
 
 ## 1.2. AUTOCANNON RESULTS
 
-![profiler](file:///home/jorgem/Pictures/profiler.png)
+![profiler](https://raw.githubusercontent.com/jamp-scp28/backendCourse/master/16.%20Log/results/cannon.png)
 
 ## 2. PROFILER WITH INSPECT
 
-![profiler](file:///home/jorgem/Pictures/profiler.png)
+![profiler](https://raw.githubusercontent.com/jamp-scp28/backendCourse/master/16.%20Log/results/inspect.png)
 
 ## 3. 0X DIAGRAM
 
-![profiler](file:///home/jorgem/Pictures/profiler.png)
+![profiler](https://raw.githubusercontent.com/jamp-scp28/backendCourse/master/16.%20Log/results/0x.png)
 
 
 ________________________
+
 
 # SUMMARY
 
