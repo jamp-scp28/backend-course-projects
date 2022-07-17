@@ -1,0 +1,859 @@
+Statistical profiling result from isolate-0x5d60860-16400-v8.log, (8741 ticks, 7 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   6122   70.0%          /home/jorgem/.nvm/versions/node/v16.15.0/bin/node
+    210    2.4%          /usr/lib/x86_64-linux-gnu/libc-2.31.so
+     29    0.3%          /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+     11    0.1%          [vdso]
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     60    0.7%    2.5%  LazyCompile: *recursiveTypeRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:65471:44
+     45    0.5%    1.9%  LazyCompile: *scan /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:11420:22
+     41    0.5%    1.7%  LazyCompile: *scanJsDocToken /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:12145:32
+     32    0.4%    1.4%  LazyCompile: *resolve node:path:1091:10
+     22    0.3%    0.9%  LazyCompile: *instantiateTypes /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63269:34
+     17    0.2%    0.7%  LazyCompile: *getObjectTypeInstantiation /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63401:44
+     13    0.1%    0.5%  LazyCompile: *isDeeplyNestedType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:67180:36
+     13    0.1%    0.5%  LazyCompile: *getPropertyOfType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59402:35
+     12    0.1%    0.5%  LazyCompile: *instantiateSymbol /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63372:35
+     12    0.1%    0.5%  LazyCompile: *createUnionOrIntersectionProperty /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59151:51
+     12    0.1%    0.5%  LazyCompile: *createInstantiatedSymbolTable /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57632:47
+     11    0.1%    0.5%  LazyCompile: *iterateCommentRanges /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:10639:34
+     11    0.1%    0.5%  LazyCompile: *instantiateTypeWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63649:39
+     11    0.1%    0.5%  Function: ^scan /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:11420:22
+     10    0.1%    0.4%  LazyCompile: *isRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:64978:33
+     10    0.1%    0.4%  LazyCompile: *instantiateType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63627:33
+      9    0.1%    0.4%  LazyCompile: *getTypeOfInstantiatedSymbol /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:56827:45
+      9    0.1%    0.4%  LazyCompile: *<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:37489:74
+      8    0.1%    0.3%  LazyCompile: *tryGetTypeAtPosition /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:77546:38
+      8    0.1%    0.3%  LazyCompile: *step /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:45:18
+      8    0.1%    0.3%  LazyCompile: *resolveNameHelper /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:49649:35
+      8    0.1%    0.3%  LazyCompile: *getSymbolLinks /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:49345:32
+      8    0.1%    0.3%  Function: ^forEachChild /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:30729:26
+      7    0.1%    0.3%  LazyCompile: *getMappedType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63281:31
+      7    0.1%    0.3%  LazyCompile: *createNormalizedTypeReference /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:60988:47
+      7    0.1%    0.3%  LazyCompile: *bindWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:46819:28
+      7    0.1%    0.3%  LazyCompile: *bind /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:46727:22
+      7    0.1%    0.3%  Function: ^bindWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:46819:28
+      6    0.1%    0.3%  LazyCompile: *visitNode /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:30662:23
+      6    0.1%    0.3%  LazyCompile: *resolveStructuredTypeMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58697:46
+      6    0.1%    0.3%  LazyCompile: *instantiateSignatures /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63272:39
+      6    0.1%    0.3%  LazyCompile: *inferFromSignatures /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:69039:41
+      6    0.1%    0.3%  LazyCompile: *getTypeOfSymbol /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:56890:33
+      6    0.1%    0.3%  LazyCompile: *getTypeListId /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:60163:31
+      6    0.1%    0.3%  LazyCompile: *bindChildren /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:45213:30
+      6    0.1%    0.3%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      6    0.1%    0.3%  LazyCompile: *<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:51770:38
+      6    0.1%    0.3%  Function: ^structuredTypeRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:65590:45
+      6    0.1%    0.3%  Function: ^scanJsDocToken /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:12145:32
+      6    0.1%    0.3%  Function: ^isRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:64978:33
+      5    0.1%    0.2%  LazyCompile: *parseParametersWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33533:39
+      5    0.1%    0.2%  LazyCompile: *getTypeAliasInstantiation /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:60299:43
+      5    0.1%    0.2%  LazyCompile: *getReturnTypeOfSignature /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59854:42
+      5    0.1%    0.2%  LazyCompile: *getConditionalTypeInstantiation /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63602:49
+      4    0.0%    0.2%  LazyCompile: *structuredTypeRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:65590:45
+      4    0.0%    0.2%  LazyCompile: *speculationHelper /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32040:35
+      4    0.0%    0.2%  LazyCompile: *some /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:931:18
+      4    0.0%    0.2%  LazyCompile: *signaturesRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:66607:41
+      4    0.0%    0.2%  LazyCompile: *parseTagComments /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:37733:42
+      4    0.0%    0.2%  LazyCompile: *parseJSDocCommentWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:37469:45
+      4    0.0%    0.2%  LazyCompile: *isReadonlySymbol /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:78289:34
+      4    0.0%    0.2%  LazyCompile: *instantiateTypeWithAlias /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63630:42
+      4    0.0%    0.2%  LazyCompile: *getUnionType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61284:30
+      4    0.0%    0.2%  LazyCompile: *getTypeFromTypeNodeWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63151:43
+      4    0.0%    0.2%  LazyCompile: *createIdentifier /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32363:34
+      4    0.0%    0.2%  LazyCompile: *createBaseVariableLikeDeclaration /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:22875:51
+      4    0.0%    0.2%  LazyCompile: *compareValues /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:2020:27
+      4    0.0%    0.2%  LazyCompile: *compareSignaturesRelated /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:64341:42
+      4    0.0%    0.2%  LazyCompile: *codePointAt /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:12311:63
+      4    0.0%    0.2%  LazyCompile: *bindEach /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:45203:26
+      4    0.0%    0.2%  LazyCompile: *<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68258:47
+      4    0.0%    0.2%  Function: ^resolveNameHelper /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:49649:35
+      4    0.0%    0.2%  Function: ^recursiveTypeRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:65471:44
+      4    0.0%    0.2%  Function: ^declareSymbol /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:44902:31
+      3    0.0%    0.1%  RegExp: (?:\/\/)|(?:^|\/)\.\.?(?:$|\/)
+      3    0.0%    0.1%  LazyCompile: *symbolIsValue /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:51708:31
+      3    0.0%    0.1%  LazyCompile: *setParentRecursive /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:21212:32
+      3    0.0%    0.1%  LazyCompile: *scanString /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:11055:28
+      3    0.0%    0.1%  LazyCompile: *resolveEntityName /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:50986:35
+      3    0.0%    0.1%  LazyCompile: *resolveAnonymousTypeMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58365:45
+      3    0.0%    0.1%  LazyCompile: *realpathSync node:fs:2425:22
+      3    0.0%    0.1%  LazyCompile: *parseNonArrayType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33948:35
+      3    0.0%    0.1%  LazyCompile: *isNeverReducedProperty /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59367:40
+      3    0.0%    0.1%  LazyCompile: *instantiateList /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63252:33
+      3    0.0%    0.1%  LazyCompile: *inferFromTypes /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68467:36
+      3    0.0%    0.1%  LazyCompile: *hasSyntacticModifier /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:18888:34
+      3    0.0%    0.1%  LazyCompile: *getTypePredicateOfSignature /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59818:45
+      3    0.0%    0.1%  LazyCompile: *getTypeOfVariableOrParameterOrProperty /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:56530:56
+      3    0.0%    0.1%  LazyCompile: *getTypeOfFuncClassEnumModule /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:56755:46
+      3    0.0%    0.1%  LazyCompile: *getTypeFacts /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:69589:30
+      3    0.0%    0.1%  LazyCompile: *getReducedApparentType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59144:40
+      3    0.0%    0.1%  LazyCompile: *getPropertiesOfUnionOrIntersectionType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58744:56
+      3    0.0%    0.1%  LazyCompile: *getIntersectionType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61600:37
+      3    0.0%    0.1%  LazyCompile: *getConditionalFlowTypeOfType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:60476:46
+      3    0.0%    0.1%  LazyCompile: *getCombinedModifierFlags /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:12645:38
+      3    0.0%    0.1%  LazyCompile: *getApparentType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59130:33
+      3    0.0%    0.1%  LazyCompile: *forEachChild /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:30729:26
+      3    0.0%    0.1%  LazyCompile: *finishNode /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32323:28
+      3    0.0%    0.1%  LazyCompile: *createBaseNode /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:22772:32
+      3    0.0%    0.1%  Function: ^parsePropertyOrMethodSignature /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33663:48
+      3    0.0%    0.1%  Function: ^getIndexedAccessTypeOrUndefined /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:62404:49
+      3    0.0%    0.1%  Function: ^bind /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:46727:22
+      3    0.0%    0.1%  Function: ^<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:37489:74
+      2    0.0%    0.1%  LazyCompile: *withJSDoc /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:31707:27
+      2    0.0%    0.1%  LazyCompile: *visitNodes /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:30665:24
+      2    0.0%    0.1%  LazyCompile: *token /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:31992:23
+      2    0.0%    0.1%  LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      2    0.0%    0.1%  LazyCompile: *pushTypeResolution /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:55624:36
+      2    0.0%    0.1%  LazyCompile: *propertiesRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:66440:41
+      2    0.0%    0.1%  LazyCompile: *popTypeResolution /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:55677:35
+      2    0.0%    0.1%  LazyCompile: *parseParameterWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33482:38
+      2    0.0%    0.1%  LazyCompile: *isTypeRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:64606:33
+      2    0.0%    0.1%  LazyCompile: *isListTerminator /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32652:34
+      2    0.0%    0.1%  LazyCompile: *isLineBreak /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:10410:25
+      2    0.0%    0.1%  LazyCompile: *isGenericMappedType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58694:37
+      2    0.0%    0.1%  LazyCompile: *isExpression /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:13858:26
+      2    0.0%    0.1%  LazyCompile: *isArrayOrTupleType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:67407:36
+      2    0.0%    0.1%  LazyCompile: *invokeOnce /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68682:32
+      2    0.0%    0.1%  LazyCompile: *instantiateSignature /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63349:38
+      2    0.0%    0.1%  LazyCompile: *inferFromProperties /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:69029:41
+      2    0.0%    0.1%  LazyCompile: *hasSkipDirectInferenceFlag /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68316:44
+      2    0.0%    0.1%  LazyCompile: *getUnmatchedProperty /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68295:38
+      2    0.0%    0.1%  LazyCompile: *getTypeOfParameter /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:77464:36
+      2    0.0%    0.1%  LazyCompile: *getSymbolOfNameOrPropertyAccessExpression /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:86258:59
+      2    0.0%    0.1%  LazyCompile: *getSymbol /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:49358:27
+      2    0.0%    0.1%  LazyCompile: *getSignaturesOfType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59440:37
+      2    0.0%    0.1%  LazyCompile: *getPropertiesOfObjectType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58726:43
+      2    0.0%    0.1%  LazyCompile: *getObjectFlags /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:19706:28
+      2    0.0%    0.1%  LazyCompile: *getNormalizedType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:64642:35
+      2    0.0%    0.1%  LazyCompile: *getIndexInfosOfType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59487:37
+      2    0.0%    0.1%  LazyCompile: *getDeclarationModifierFlagsFromSymbol /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:19534:51
+      2    0.0%    0.1%  LazyCompile: *getBaseConstraintOfType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58930:41
+      2    0.0%    0.1%  LazyCompile: *getAliasId /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:60186:28
+      2    0.0%    0.1%  LazyCompile: *findResolutionCycleStartIndex /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:55639:47
+      2    0.0%    0.1%  LazyCompile: *filter /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:596:20
+      2    0.0%    0.1%  LazyCompile: *dirname node:path:1275:10
+      2    0.0%    0.1%  LazyCompile: *createToken /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:23033:29
+      2    0.0%    0.1%  LazyCompile: *createSymbol /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:49071:30
+      2    0.0%    0.1%  LazyCompile: *createSymbol /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:44796:30
+      2    0.0%    0.1%  LazyCompile: *createObjectType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:51737:34
+      2    0.0%    0.1%  LazyCompile: *createNodeArray /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32318:33
+      2    0.0%    0.1%  LazyCompile: *createBaseNamedDeclaration /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:22790:44
+      2    0.0%    0.1%  LazyCompile: *convertPropertyValueToJson /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:41042:44
+      2    0.0%    0.1%  LazyCompile: *combineTypeMappers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63324:36
+      2    0.0%    0.1%  LazyCompile: *checkTypeRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:64668:36
+      2    0.0%    0.1%  LazyCompile: *bindJSDoc /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:46781:27
+      2    0.0%    0.1%  LazyCompile: *addInheritedMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57640:37
+      2    0.0%    0.1%  LazyCompile: *_loop_18 /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:62534:37
+      2    0.0%    0.1%  LazyCompile: *_loop_17 /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61328:41
+      2    0.0%    0.1%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      2    0.0%    0.1%  LazyCompile: *<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:50030:44
+      2    0.0%    0.1%  Function: ^unionOrIntersectionRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:65265:50
+      2    0.0%    0.1%  Function: ^removeRedundantLiteralTypes /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61222:45
+      2    0.0%    0.1%  Function: ^parseTypeAnnotation /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:34291:37
+      2    0.0%    0.1%  Function: ^parsePropertyNameWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32409:41
+      2    0.0%    0.1%  Function: ^nextTokenWithoutCheck /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:31995:39
+      2    0.0%    0.1%  Function: ^isPrototypeProperty /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:74317:37
+      2    0.0%    0.1%  Function: ^inferFromTypes /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68467:36
+      2    0.0%    0.1%  Function: ^inferFromSignatures /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:69039:41
+      2    0.0%    0.1%  Function: ^getTypeFacts /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:69589:30
+      2    0.0%    0.1%  Function: ^getResolvedMembersOrExportsOfSymbol /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57815:53
+      2    0.0%    0.1%  Function: ^getReducedType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59343:32
+      2    0.0%    0.1%  Function: ^getImmediateBaseConstraint /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58958:48
+      2    0.0%    0.1%  Function: ^filterType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:69886:28
+      2    0.0%    0.1%  Function: ^createUnionOrIntersectionProperty /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59151:51
+      2    0.0%    0.1%  Function: ^compareSignaturesRelated /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:64341:42
+      2    0.0%    0.1%  Function: ^bindContainer /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:45090:31
+      2    0.0%    0.1%  Function: ^bindChildren /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:45213:30
+      2    0.0%    0.1%  Function: ^addJSDocComment /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:31711:33
+      2    0.0%    0.1%  Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1    0.0%    0.0%  RegExp: (?:^|\/)\.?\.$
+      1    0.0%    0.0%  LazyCompile: *unescapeLeadingUnderscores /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:12781:40
+      1    0.0%    0.0%  LazyCompile: *skipWhitespaceOrAsterisk /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:37627:50
+      1    0.0%    0.0%  LazyCompile: *signatureHasRestParameter /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:89298:39
+      1    0.0%    0.0%  LazyCompile: *setStructuredTypeMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:51785:42
+      1    0.0%    0.0%  LazyCompile: *setParent /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:21195:23
+      1    0.0%    0.0%  LazyCompile: *scanIdentifier /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:11879:32
+      1    0.0%    0.0%  LazyCompile: *readFileSync node:fs:450:22
+      1    0.0%    0.0%  LazyCompile: *pushComment /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:37741:41
+      1    0.0%    0.0%  LazyCompile: *pushComment /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:37497:41
+      1    0.0%    0.0%  LazyCompile: *propertyRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:66331:39
+      1    0.0%    0.0%  LazyCompile: *propagatePropertyNameFlagsOfChild /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:27306:47
+      1    0.0%    0.0%  LazyCompile: *parseTypeOrTypePredicate /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:34246:42
+      1    0.0%    0.0%  LazyCompile: *parseTypeOperatorOrHigher /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:34132:43
+      1    0.0%    0.0%  LazyCompile: *parseTypeArgumentsOfTypeReference /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33275:51
+      1    0.0%    0.0%  LazyCompile: *parseTokenNode /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32285:32
+      1    0.0%    0.0%  LazyCompile: *parseStatement /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:36264:32
+      1    0.0%    0.0%  LazyCompile: *parsePrimaryExpression /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:35642:40
+      1    0.0%    0.0%  LazyCompile: *parseJSDocIdentifierName /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:38322:50
+      1    0.0%    0.0%  LazyCompile: *parseDelimitedList /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33050:36
+      1    0.0%    0.0%  LazyCompile: *parseDecorators /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:36739:33
+      1    0.0%    0.0%  LazyCompile: *parenthesizeConstituentTypesOfUnionType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:22091:59
+      1    0.0%    0.0%  LazyCompile: *normalizeString node:path:66:25
+      1    0.0%    0.0%  LazyCompile: *nextToken /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32002:27
+      1    0.0%    0.0%  LazyCompile: *map /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:633:17
+      1    0.0%    0.0%  LazyCompile: *lookAhead /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:12270:27
+      1    0.0%    0.0%  LazyCompile: *isWeakType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:66947:28
+      1    0.0%    0.0%  LazyCompile: *isUnaryExpressionKind /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:13826:35
+      1    0.0%    0.0%  LazyCompile: *isStartOfStatement /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:36201:36
+      1    0.0%    0.0%  LazyCompile: *isParameterPropertyDeclaration /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:12602:44
+      1    0.0%    0.0%  LazyCompile: *isObjectLiteralOrClassExpressionMethodOrAccessor /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:15792:62
+      1    0.0%    0.0%  LazyCompile: *isListElement /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32515:31
+      1    0.0%    0.0%  LazyCompile: *isJSDocTypeAlias /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:16849:30
+      1    0.0%    0.0%  LazyCompile: *isInJSFile /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:16334:24
+      1    0.0%    0.0%  LazyCompile: *isIdentifier /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32092:30
+      1    0.0%    0.0%  LazyCompile: *isGenericIndexType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:62259:36
+      1    0.0%    0.0%  LazyCompile: *isFunctionLikeDeclarationKind /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:13540:43
+      1    0.0%    0.0%  LazyCompile: *isFromInferenceBlockedSource /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68319:46
+      1    0.0%    0.0%  LazyCompile: *isErrorType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:55717:29
+      1    0.0%    0.0%  LazyCompile: *isDiscriminantWithNeverType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59370:45
+      1    0.0%    0.0%  LazyCompile: *isConflictMarkerTrivia /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:10562:36
+      1    0.0%    0.0%  LazyCompile: *instantiateIndexInfos /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63275:39
+      1    0.0%    0.0%  LazyCompile: *inferFromIndexTypes /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:69061:41
+      1    0.0%    0.0%  LazyCompile: *inferFromContravariantTypes /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68745:49
+      1    0.0%    0.0%  LazyCompile: *inDisallowConditionalTypesContext /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:31946:51
+      1    0.0%    0.0%  LazyCompile: *hasType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:55650:25
+      1    0.0%    0.0%  LazyCompile: *getTransformFlagsSubtreeExclusions /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:27330:48
+      1    0.0%    0.0%  LazyCompile: *getTokenText /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:10826:36
+      1    0.0%    0.0%  LazyCompile: *getSymbolId /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:48217:25
+      1    0.0%    0.0%  LazyCompile: *getSingleSignature /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:75420:36
+      1    0.0%    0.0%  LazyCompile: *getSimplifiedType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:62280:35
+      1    0.0%    0.0%  LazyCompile: *getPropertyNameFromType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57715:41
+      1    0.0%    0.0%  LazyCompile: *getPropertiesOfType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58768:37
+      1    0.0%    0.0%  LazyCompile: *getParameterCount /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:77593:35
+      1    0.0%    0.0%  LazyCompile: *getOuterTypeParameters /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:56958:40
+      1    0.0%    0.0%  LazyCompile: *getNodePos /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:31980:28
+      1    0.0%    0.0%  LazyCompile: *getNodeLinks /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:49351:30
+      1    0.0%    0.0%  LazyCompile: *getNameOfDeclaration /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:12915:34
+      1    0.0%    0.0%  LazyCompile: *getMinTypeArgumentCount /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59584:41
+      1    0.0%    0.0%  LazyCompile: *getLiteralTypeFromProperty /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61824:44
+      1    0.0%    0.0%  LazyCompile: *getJSDocCommentRanges /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:15494:35
+      1    0.0%    0.0%  LazyCompile: *getIndexedAccessTypeOrUndefined /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:62404:49
+      1    0.0%    0.0%  LazyCompile: *getGlobalNonNullableTypeInstantiation /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:67638:55
+      1    0.0%    0.0%  LazyCompile: *getGenericObjectFlags /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:62262:39
+      1    0.0%    0.0%  LazyCompile: *getFalsyFlagsOfTypes /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:67582:38
+      1    0.0%    0.0%  LazyCompile: *getEncodedRootLength /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:7657:34
+      1    0.0%    0.0%  LazyCompile: *getEffectiveRestType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:77645:38
+      1    0.0%    0.0%  LazyCompile: *getDeclarationName /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:44820:36
+      1    0.0%    0.0%  LazyCompile: *getCheckFlags /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:19530:27
+      1    0.0%    0.0%  LazyCompile: *forEach /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:374:21
+      1    0.0%    0.0%  LazyCompile: *extname node:path:1385:10
+      1    0.0%    0.0%  LazyCompile: *declareSymbolAndAddToSymbolTable /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:46276:50
+      1    0.0%    0.0%  LazyCompile: *declareSymbol /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:44902:31
+      1    0.0%    0.0%  LazyCompile: *createTypeMapper /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63278:34
+      1    0.0%    0.0%  LazyCompile: *createType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:51720:28
+      1    0.0%    0.0%  LazyCompile: *createPropertySignature /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:23280:41
+      1    0.0%    0.0%  LazyCompile: *createParameterDeclaration /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:23228:44
+      1    0.0%    0.0%  LazyCompile: *createNodeArray /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:22737:33
+      1    0.0%    0.0%  LazyCompile: *createIdentifier /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:22965:34
+      1    0.0%    0.0%  LazyCompile: *createBaseGenericNamedDeclaration /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:22816:51
+      1    0.0%    0.0%  LazyCompile: *contains /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:556:22
+      1    0.0%    0.0%  LazyCompile: *compileFunction node:vm:308:25
+      1    0.0%    0.0%  LazyCompile: *combinePaths /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:7922:26
+      1    0.0%    0.0%  LazyCompile: *canFollowModifier /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32500:35
+      1    0.0%    0.0%  LazyCompile: *bindPropertyWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:47055:36
+      1    0.0%    0.0%  LazyCompile: *bindParentToChild /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:21232:35
+      1    0.0%    0.0%  LazyCompile: *bindParameter /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:47583:31
+      1    0.0%    0.0%  LazyCompile: *bindContainer /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:45090:31
+      1    0.0%    0.0%  LazyCompile: *assert /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:2714:24
+      1    0.0%    0.0%  LazyCompile: *appendIfUnique /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:1226:28
+      1    0.0%    0.0%  LazyCompile: *append /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:1167:20
+      1    0.0%    0.0%  LazyCompile: *addTypesToUnion /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61152:33
+      1    0.0%    0.0%  LazyCompile: *addTypesToIntersection /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61463:40
+      1    0.0%    0.0%  LazyCompile: *addTypeToUnion /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61124:32
+      1    0.0%    0.0%  LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      1    0.0%    0.0%  LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+      1    0.0%    0.0%  LazyCompile: *<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61843:76
+      1    0.0%    0.0%  Function: ^write node:buffer:1051:40
+      1    0.0%    0.0%  Function: ^typesDefinitelyUnrelated /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68304:42
+      1    0.0%    0.0%  Function: ^tryReadSync node:fs:429:21
+      1    0.0%    0.0%  Function: ^tryParseTypeExpression /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:37906:48
+      1    0.0%    0.0%  Function: ^tryGetTypeFromEffectiveTypeNode /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:56524:49
+      1    0.0%    0.0%  Function: ^substituteExpressionIdentifier /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:105734:48
+      1    0.0%    0.0%  Function: ^substituteExpression /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:94164:38
+      1    0.0%    0.0%  Function: ^sourceFileMayBeEmitted /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:18487:36
+      1    0.0%    0.0%  Function: ^someTypeRelatedToType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:65356:43
+      1    0.0%    0.0%  Function: ^some /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:931:18
+      1    0.0%    0.0%  Function: ^signaturesRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:66607:41
+      1    0.0%    0.0%  Function: ^signatureRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:66728:40
+      1    0.0%    0.0%  Function: ^setValueDeclaration /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:16723:33
+      1    0.0%    0.0%  Function: ^setTextPos /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:12296:28
+      1    0.0%    0.0%  Function: ^serializeInto /home/jorgem/software/backendCourse/16. Log/node_modules/bson/lib/parser/serializer.js:550:23
+      1    0.0%    0.0%  Function: ^scanNumberFragment /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:10884:36
+      1    0.0%    0.0%  Function: ^resolveTypeReferenceName /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:60395:42
+      1    0.0%    0.0%  Function: ^resolveStructuredTypeMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58697:46
+      1    0.0%    0.0%  Function: ^resolveObjectTypeMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57907:42
+      1    0.0%    0.0%  Function: ^resolveModuleName /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:43019:31
+      1    0.0%    0.0%  Function: ^resolveEntityName /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:50986:35
+      1    0.0%    0.0%  Function: ^resolveAnonymousTypeMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58365:45
+      1    0.0%    0.0%  Function: ^remove node:internal/linkedlist:16:16
+      1    0.0%    0.0%  Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1    0.0%    0.0%  Function: ^pushTypeResolution /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:55624:36
+      1    0.0%    0.0%  Function: ^propagateChildrenFlags /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:27315:36
+      1    0.0%    0.0%  Function: ^processPromiseRejections node:internal/process/promises:211:34
+      1    0.0%    0.0%  Function: ^pipelineEmitWithHintWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:111084:44
+      1    0.0%    0.0%  Function: ^parseTypeReference /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33280:36
+      1    0.0%    0.0%  Function: ^parseThisTypeNode /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33304:35
+      1    0.0%    0.0%  Function: ^parseRightSideOfDot /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33147:37
+      1    0.0%    0.0%  Function: ^parsePostfixTypeOrHigher /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:34072:42
+      1    0.0%    0.0%  Function: ^parseParameterWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33482:38
+      1    0.0%    0.0%  Function: ^parseNonArrayType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33948:35
+      1    0.0%    0.0%  Function: ^parseLiteralLikeNode /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33249:38
+      1    0.0%    0.0%  Function: ^parseJsonText /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:31534:31
+      1    0.0%    0.0%  Function: ^parseInterfaceDeclaration /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:36930:43
+      1    0.0%    0.0%  Function: ^parseIdentifierName /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32397:37
+      1    0.0%    0.0%  Function: ^parseFunctionOrConstructorTypeToError /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:34144:55
+      1    0.0%    0.0%  Function: ^parseDelimitedList /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33050:36
+      1    0.0%    0.0%  Function: ^parseDeclarationWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:36375:40
+      1    0.0%    0.0%  Function: ^openSync node:fs:576:18
+      1    0.0%    0.0%  Function: ^onStreamRead node:internal/stream_base_commons:167:22
+      1    0.0%    0.0%  Function: ^noop node:internal/util/debuglog:47:14
+      1    0.0%    0.0%  Function: ^nodeIsMissing /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:14610:27
+      1    0.0%    0.0%  Function: ^nextTokenIsIdentifierOrStringLiteralOnSameLine /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:36421:64
+      1    0.0%    0.0%  Function: ^nextToken /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32002:27
+      1    0.0%    0.0%  Function: ^markSymbolOfAliasDeclarationIfTypeOnlyWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:50878:62
+      1    0.0%    0.0%  Function: ^loadNodeModuleFromDirectoryWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:43817:47
+      1    0.0%    0.0%  Function: ^loadModuleFromSpecificNodeModulesDirectory /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:44333:56
+      1    0.0%    0.0%  Function: ^isVolumeCharacter /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:7638:31
+      1    0.0%    0.0%  Function: ^isUpdateExpression /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:35016:36
+      1    0.0%    0.0%  Function: ^isTypeParameterPossiblyReferenced /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63455:51
+      1    0.0%    0.0%  Function: ^isStringOrNumericLiteralLike /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:17486:42
+      1    0.0%    0.0%  Function: ^isStringIndexSignatureOnlyType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:64514:48
+      1    0.0%    0.0%  Function: ^isStartOfMappedType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33774:37
+      1    0.0%    0.0%  Function: ^isStartOfFunctionTypeOrConstructorType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:34191:56
+      1    0.0%    0.0%  Function: ^isRightSideOfQualifiedNameOrPropertyAccessOrJSDocMemberName /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:19162:73
+      1    0.0%    0.0%  Function: ^isPartialMappedType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58691:37
+      1    0.0%    0.0%  Function: ^isPartOfTypeNode /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:15516:30
+      1    0.0%    0.0%  Function: ^isOptionalJSDocPropertyLikeTag /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59570:48
+      1    0.0%    0.0%  Function: ^isObjectTypeWithInferableIndex /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:67705:48
+      1    0.0%    0.0%  Function: ^isNodeArray /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:13387:25
+      1    0.0%    0.0%  Function: ^isNamedUnionType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61255:34
+      1    0.0%    0.0%  Function: ^isLiteralType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:67488:31
+      1    0.0%    0.0%  Function: ^isInTypeQuery /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:69272:31
+      1    0.0%    0.0%  Function: ^isGlobalScopeAugmentation /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:15019:39
+      1    0.0%    0.0%  Function: ^isExportAssignment /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:29289:32
+      1    0.0%    0.0%  Function: ^isEmptyAnonymousObjectType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:64510:44
+      1    0.0%    0.0%  Function: ^isDiscriminantWithNeverType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59370:45
+      1    0.0%    0.0%  Function: ^isBindingElement /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:28990:30
+      1    0.0%    0.0%  Function: ^isArrayOrTupleType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:67407:36
+      1    0.0%    0.0%  Function: ^invokeOnce /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68682:32
+      1    0.0%    0.0%  Function: ^internIdentifier /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32353:34
+      1    0.0%    0.0%  Function: ^instantiateTypeWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63649:39
+      1    0.0%    0.0%  Function: ^instantiateContextualType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:72923:43
+      1    0.0%    0.0%  Function: ^instantiateAnonymousType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63582:42
+      1    0.0%    0.0%  Function: ^inferFromObjectTypes /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68935:42
+      1    0.0%    0.0%  Function: ^inferFromMatchingTypes /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68715:44
+      1    0.0%    0.0%  Function: ^inferFromContravariantTypes /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68745:49
+      1    0.0%    0.0%  Function: ^hasPrecedingLineBreak /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:10830:45
+      1    0.0%    0.0%  Function: ^getWidenedTypeForVariableLikeDeclaration /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:56486:58
+      1    0.0%    0.0%  Function: ^getUnionType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61284:30
+      1    0.0%    0.0%  Function: ^getTypeReferenceId /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:67080:40
+      1    0.0%    0.0%  Function: ^getTypePredicateOfSignature /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59818:45
+      1    0.0%    0.0%  Function: ^getTypeOfSymbol /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:56890:33
+      1    0.0%    0.0%  Function: ^getTypeOfInstantiatedSymbol /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:56827:45
+      1    0.0%    0.0%  Function: ^getTextOfPropertyName /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:15242:35
+      1    0.0%    0.0%  Function: ^getSingleSignature /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:75420:36
+      1    0.0%    0.0%  Function: ^getSimplifiedIndexedAccessType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:62305:48
+      1    0.0%    0.0%  Function: ^getReturnTypeOfSignature /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59854:42
+      1    0.0%    0.0%  Function: ^getRelationKey /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:67112:32
+      1    0.0%    0.0%  Function: ^getReducedApparentType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59144:40
+      1    0.0%    0.0%  Function: ^getRecursionIdentity /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:67209:38
+      1    0.0%    0.0%  Function: ^getPathFromPathComponents /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:7855:39
+      1    0.0%    0.0%  Function: ^getOuterTypeParameters /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:56958:40
+      1    0.0%    0.0%  Function: ^getObjectTypeInstantiation /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63401:44
+      1    0.0%    0.0%  Function: ^getNormalizedType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:64642:35
+      1    0.0%    0.0%  Function: ^getNonMissingTypeOfSymbol /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:56921:43
+      1    0.0%    0.0%  Function: ^getNarrowableTypeForReference /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:71514:47
+      1    0.0%    0.0%  Function: ^getModifierFlagsWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:18925:36
+      1    0.0%    0.0%  Function: ^getMappedType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63281:31
+      1    0.0%    0.0%  Function: ^getLiteralTypeFromProperty /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61824:44
+      1    0.0%    0.0%  Function: ^getIntersectionTypeFacts /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:69667:42
+      1    0.0%    0.0%  Function: ^getInferenceInfoForType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68755:45
+      1    0.0%    0.0%  Function: ^getIndexType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61861:30
+      1    0.0%    0.0%  Function: ^getFalseTypeFromConditionalType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:62692:49
+      1    0.0%    0.0%  Function: ^getExportsOfModule /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:51469:36
+      1    0.0%    0.0%  Function: ^getEncodedRootLength /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:7657:34
+      1    0.0%    0.0%  Function: ^getDefaultConstraintOfConditionalType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58848:55
+      1    0.0%    0.0%  Function: ^getApparentType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59130:33
+      1    0.0%    0.0%  Function: ^getAliasId /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:60186:28
+      1    0.0%    0.0%  Function: ^getActualTypeVariable /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:62498:39
+      1    0.0%    0.0%  Function: ^forEachChildRecursively /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:31248:37
+      1    0.0%    0.0%  Function: ^forEach /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:374:21
+      1    0.0%    0.0%  Function: ^findAncestor /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:12734:26
+      1    0.0%    0.0%  Function: ^fillMissingTypeArguments /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59595:42
+      1    0.0%    0.0%  Function: ^errorHandler /home/jorgem/software/backendCourse/16. Log/node_modules/mongodb/lib/cmap/connect.js:288:26
+      1    0.0%    0.0%  Function: ^emitPos /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:115089:25
+      1    0.0%    0.0%  Function: ^emit node:events:475:44
+      1    0.0%    0.0%  Function: ^doInsideOfContext /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:31888:35
+      1    0.0%    0.0%  Function: ^declareModuleMember /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:45023:37
+      1    0.0%    0.0%  Function: ^createTypeParameter /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:51751:37
+      1    0.0%    0.0%  Function: ^createToken /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:23033:29
+      1    0.0%    0.0%  Function: ^createObjectType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:51737:34
+      1    0.0%    0.0%  Function: ^createNodeArray /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32318:33
+      1    0.0%    0.0%  Function: ^createInstantiatedSymbolTable /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57632:47
+      1    0.0%    0.0%  Function: ^createExpressionWithTypeArguments /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:24648:51
+      1    0.0%    0.0%  Function: ^couldContainTypeVariables /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68141:43
+      1    0.0%    0.0%  Function: ^collectModuleReferences /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:118005:45
+      1    0.0%    0.0%  Function: ^checkTypeRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:64668:36
+      1    0.0%    0.0%  Function: ^checkObjectLiteral /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:73513:36
+      1    0.0%    0.0%  Function: ^bindVariableDeclarationOrBindingElement /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:47551:57
+      1    0.0%    0.0%  Function: ^bindTypeParameter /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:47648:35
+      1    0.0%    0.0%  Function: ^bindPropertyOrMethodOrAccessor /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:47633:48
+      1    0.0%    0.0%  Function: ^bindParentToChild /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:21232:35
+      1    0.0%    0.0%  Function: ^applyToReturnTypes /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68021:36
+      1    0.0%    0.0%  Function: ^allocate node:buffer:398:18
+      1    0.0%    0.0%  Function: ^allocUnsafe node:buffer:373:42
+      1    0.0%    0.0%  Function: ^addTypeToIntersection /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61427:39
+      1    0.0%    0.0%  Function: ^addNamedUnions /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61258:32
+      1    0.0%    0.0%  Function: ^addMemberForKeyTypeWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58562:47
+      1    0.0%    0.0%  Function: ^addMapping /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:90078:28
+      1    0.0%    0.0%  Function: ^_loop_18 /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:62534:37
+      1    0.0%    0.0%  Function: ^_addListener node:events:555:22
+      1    0.0%    0.0%  Function: ^SignatureObject /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:164322:33
+      1    0.0%    0.0%  Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    0.0%    0.0%  Function: ^Module._resolveLookupPaths node:internal/modules/cjs/loader:667:38
+      1    0.0%    0.0%  Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    0.0%    0.0%  Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    0.0%    0.0%  Function: ^Module node:internal/modules/cjs/loader:172:16
+      1    0.0%    0.0%  Function: ^FastBuffer node:internal/buffer:958:14
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:154:3
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:101:40
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/fs/utils:687:40
+      1    0.0%    0.0%  Function: ^<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:68258:47
+      1    0.0%    0.0%  Function: ^<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63619:85
+      1    0.0%    0.0%  Function: ^<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61843:76
+
+ [C++]:
+   ticks  total  nonlib   name
+    427    4.9%   18.0%  __write@@GLIBC_2.2.5
+    273    3.1%   11.5%  fwrite@@GLIBC_2.2.5
+    114    1.3%    4.8%  epoll_pwait@@GLIBC_2.6
+     69    0.8%    2.9%  _IO_file_xsputn@@GLIBC_2.2.5
+     58    0.7%    2.4%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     39    0.4%    1.6%  __mprotect@@GLIBC_PRIVATE
+     36    0.4%    1.5%  __libc_malloc@@GLIBC_2.2.5
+     35    0.4%    1.5%  syscall@@GLIBC_2.2.5
+     32    0.4%    1.4%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+     29    0.3%    1.2%  __pthread_cond_wait
+     24    0.3%    1.0%  __lll_lock_wait
+     23    0.3%    1.0%  std::ostream::sentry::~sentry()@@GLIBCXX_3.4
+     14    0.2%    0.6%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+     11    0.1%    0.5%  __pthread_mutex_unlock_usercnt
+     10    0.1%    0.4%  cfree@GLIBC_2.2.5
+      7    0.1%    0.3%  __GI___pthread_mutex_lock
+      6    0.1%    0.3%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      6    0.1%    0.3%  operator new(unsigned long)@@GLIBCXX_3.4
+      6    0.1%    0.3%  __pthread_cond_signal
+      5    0.1%    0.2%  std::ostream::operator<<(int)@@GLIBCXX_3.4
+      5    0.1%    0.2%  __clock_gettime@@GLIBC_PRIVATE
+      4    0.0%    0.2%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      4    0.0%    0.2%  operator delete[](void*)@@GLIBCXX_3.4
+      4    0.0%    0.2%  operator delete(void*)@@GLIBCXX_3.4
+      4    0.0%    0.2%  __libc_open
+      4    0.0%    0.2%  _IO_default_xsputn@@GLIBC_2.2.5
+      3    0.0%    0.1%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      3    0.0%    0.1%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const@@GLIBCXX_3.4.18
+      3    0.0%    0.1%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const@@GLIBCXX_3.4.18
+      3    0.0%    0.1%  std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      3    0.0%    0.1%  fputc@@GLIBC_2.2.5
+      3    0.0%    0.1%  __GI___pthread_rwlock_wrlock
+      3    0.0%    0.1%  _IO_file_sync@@GLIBC_2.2.5
+      2    0.0%    0.1%  fflush@@GLIBC_2.2.5
+      2    0.0%    0.1%  __pthread_rwlock_tryrdlock
+      2    0.0%    0.1%  __madvise@@GLIBC_PRIVATE
+      2    0.0%    0.1%  __libc_read
+      2    0.0%    0.1%  __GI___pthread_rwlock_unlock
+      1    0.0%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<unsigned long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::ostream::flush()@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const@@GLIBCXX_3.4
+      1    0.0%    0.0%  std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.0%    0.0%  operator new[](unsigned long, std::nothrow_t const&)@@GLIBCXX_3.4
+      1    0.0%    0.0%  operator new[](unsigned long)@@GLIBCXX_3.4
+      1    0.0%    0.0%  __vsnprintf@@GLIBC_2.2.5
+      1    0.0%    0.0%  __munmap@@GLIBC_PRIVATE
+      1    0.0%    0.0%  _IO_setb@@GLIBC_2.2.5
+
+ [Summary]:
+   ticks  total  nonlib   name
+   1073   12.3%   45.3%  JavaScript
+   1289   14.7%   54.4%  C++
+    402    4.6%   17.0%  GC
+   6372   72.9%          Shared libraries
+      7    0.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    398   37.2%    4.6%  __write@@GLIBC_2.2.5
+    271   25.3%    3.1%  fwrite@@GLIBC_2.2.5
+     69    6.4%    0.8%  _IO_file_xsputn@@GLIBC_2.2.5
+     58    5.4%    0.7%  std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long)@@GLIBCXX_3.4.9
+     35    3.3%    0.4%  syscall@@GLIBC_2.2.5
+     32    3.0%    0.4%  std::ostream::sentry::sentry(std::ostream&)@@GLIBCXX_3.4
+     32    3.0%    0.4%  __libc_malloc@@GLIBC_2.2.5
+     31    2.9%    0.4%  __mprotect@@GLIBC_PRIVATE
+     23    2.1%    0.3%  std::ostream::sentry::~sentry()@@GLIBCXX_3.4
+     13    1.2%    0.1%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      9    0.8%    0.1%  cfree@GLIBC_2.2.5
+      8    0.7%    0.1%  __pthread_mutex_unlock_usercnt
+      6    0.6%    0.1%  std::ostream& std::ostream::_M_insert<long>(long)@@GLIBCXX_3.4.9
+      6    0.6%    0.1%  __lll_lock_wait
+      6    0.6%    0.1%  __GI___pthread_mutex_lock
+      5    0.5%    0.1%  std::ostream::operator<<(int)@@GLIBCXX_3.4
+      5    0.5%    0.1%  operator new(unsigned long)@@GLIBCXX_3.4
+      5    0.5%    0.1%  __clock_gettime@@GLIBC_PRIVATE
+      4    0.4%    0.0%  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      4    0.4%    0.0%  operator delete[](void*)@@GLIBCXX_3.4
+      4    0.4%    0.0%  operator delete(void*)@@GLIBCXX_3.4
+      4    0.4%    0.0%  __pthread_cond_signal
+      4    0.4%    0.0%  __libc_open
+      4    0.4%    0.0%  _IO_default_xsputn@@GLIBC_2.2.5
+      3    0.3%    0.0%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, long) const@@GLIBCXX_3.4
+      3    0.3%    0.0%  std::__detail::_Prime_rehash_policy::_M_next_bkt(unsigned long) const@@GLIBCXX_3.4.18
+      3    0.3%    0.0%  std::__detail::_Prime_rehash_policy::_M_need_rehash(unsigned long, unsigned long, unsigned long) const@@GLIBCXX_3.4.18
+      3    0.3%    0.0%  std::_Rb_tree_decrement(std::_Rb_tree_node_base*)@@GLIBCXX_3.4
+      3    0.3%    0.0%  __GI___pthread_rwlock_wrlock
+      3    0.3%    0.0%  _IO_file_sync@@GLIBC_2.2.5
+      2    0.2%    0.0%  fputc@@GLIBC_2.2.5
+      2    0.2%    0.0%  fflush@@GLIBC_2.2.5
+      2    0.2%    0.0%  __pthread_rwlock_tryrdlock
+      1    0.1%    0.0%  std::ostreambuf_iterator<char, std::char_traits<char> > std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::_M_insert_int<unsigned long>(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const@@GLIBCXX_3.4
+      1    0.1%    0.0%  std::ostream::flush()@@GLIBCXX_3.4
+      1    0.1%    0.0%  std::num_put<char, std::ostreambuf_iterator<char, std::char_traits<char> > >::do_put(std::ostreambuf_iterator<char, std::char_traits<char> >, std::ios_base&, char, unsigned long) const@@GLIBCXX_3.4
+      1    0.1%    0.0%  std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)@@GLIBCXX_3.4
+      1    0.1%    0.0%  operator new[](unsigned long, std::nothrow_t const&)@@GLIBCXX_3.4
+      1    0.1%    0.0%  operator new[](unsigned long)@@GLIBCXX_3.4
+      1    0.1%    0.0%  __vsnprintf@@GLIBC_2.2.5
+      1    0.1%    0.0%  __libc_read
+      1    0.1%    0.0%  __GI___pthread_rwlock_unlock
+      1    0.1%    0.0%  _IO_setb@@GLIBC_2.2.5
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   6122   70.0%  /home/jorgem/.nvm/versions/node/v16.15.0/bin/node
+   2943   48.1%    /home/jorgem/.nvm/versions/node/v16.15.0/bin/node
+    366   12.4%      Function: ^compileFunction node:vm:308:25
+    363   99.2%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+    361   99.4%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+    339   93.9%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     19    5.3%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+    298   10.1%      LazyCompile: ~Script node:vm:66:14
+    297   99.7%        LazyCompile: ~_moduleCompile /home/jorgem/software/backendCourse/16. Log/node_modules/v8-compile-cache-lib/v8-compile-cache.js:207:17
+    297  100.0%          LazyCompile: ~_ownModuleCompile /home/jorgem/software/backendCourse/16. Log/node_modules/v8-compile-cache-lib/v8-compile-cache.js:157:31
+    297  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+    111    3.8%      /home/jorgem/.nvm/versions/node/v16.15.0/bin/node
+      7    6.3%        LazyCompile: *getPropertiesOfUnionOrIntersectionType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58744:56
+      3   42.9%          LazyCompile: *getReducedType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59343:32
+      3  100.0%            Function: ^sameMap /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:653:21
+      3   42.9%          LazyCompile: *getNormalizedType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:64642:35
+      3  100.0%            LazyCompile: *isRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:64978:33
+      1   14.3%          Function: ^getReducedType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59343:32
+      1  100.0%            Function: ^sameMap /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:653:21
+      6    5.4%        LazyCompile: *createInstantiatedSymbolTable /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57632:47
+      4   66.7%          LazyCompile: *resolveObjectTypeMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57907:42
+      4  100.0%            Function: ^resolveTypeReferenceMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57948:45
+      2   33.3%          Function: ^resolveObjectTypeMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57907:42
+      2  100.0%            Function: ^resolveTypeReferenceMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57948:45
+      6    5.4%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      6  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      3   50.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      3   50.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      5    4.5%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      5  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      5  100.0%            Function: ^Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue /home/jorgem/software/backendCourse/16. Log/node_modules/@cspotcode/source-map-support/source-map-support.js:792:96
+      4    3.6%        LazyCompile: *recursiveTypeRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:65471:44
+      2   50.0%          LazyCompile: *isRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:64978:33
+      1   50.0%            Function: ^structuredTypeRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:65590:45
+      1   50.0%            Function: ^someTypeRelatedToType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:65356:43
+      2   50.0%          Function: ^isRelatedTo /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:64978:33
+      1   50.0%            Function: ^typeRelatedToSomeType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:65313:43
+      1   50.0%            Function: ^someTypeRelatedToType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:65356:43
+      4    3.6%        LazyCompile: *getObjectTypeInstantiation /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63401:44
+      3   75.0%          LazyCompile: *instantiateTypeWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63649:39
+      1   33.3%            LazyCompile: *instantiateTypeWithAlias /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63630:42
+      1   33.3%            LazyCompile: *instantiateType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63627:33
+      1   33.3%            LazyCompile: *getTypeOfInstantiatedSymbol /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:56827:45
+      1   25.0%          Function: ^instantiateTypeWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63649:39
+      1  100.0%            LazyCompile: *instantiateType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63627:33
+      4    3.6%        Function: ^pathComponents /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:7803:28
+      4  100.0%          Function: ^getPathComponents /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:7840:31
+      3   75.0%            Function: ^getNormalizedPathComponents /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:7972:41
+      1   25.0%            Function: ^containsPath /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:8112:26
+      4    3.6%        Function: ^getObjectTypeInstantiation /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63401:44
+      3   75.0%          LazyCompile: *instantiateTypeWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63649:39
+      1   33.3%            LazyCompile: *instantiateTypes /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63269:34
+      1   33.3%            LazyCompile: *instantiateTypeWithAlias /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63630:42
+      1   33.3%            LazyCompile: *instantiateType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63627:33
+      1   25.0%          Function: ^instantiateTypeWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63649:39
+      1  100.0%            Function: ^instantiateTypeWithAlias /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63630:42
+      3    2.7%        Function: ^createInstantiatedSymbolTable /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57632:47
+      3  100.0%          Function: ^resolveObjectTypeMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57907:42
+      3  100.0%            Function: ^resolveTypeReferenceMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57948:45
+      3    2.7%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      3  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3  100.0%            Function: ^Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue /home/jorgem/software/backendCourse/16. Log/node_modules/@cspotcode/source-map-support/source-map-support.js:792:96
+      2    1.8%        LazyCompile: *setParentRecursive /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:21212:32
+      2  100.0%          LazyCompile: *bindChildren /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:45213:30
+      2  100.0%            LazyCompile: *bind /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:46727:22
+      2    1.8%        LazyCompile: *createNormalizedTypeReference /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:60988:47
+      2  100.0%          LazyCompile: *instantiateTypeWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63649:39
+      1   50.0%            LazyCompile: *instantiateTypes /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63269:34
+      1   50.0%            LazyCompile: *instantiateTypeWithAlias /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63630:42
+      2    1.8%        LazyCompile: *createIdentifier /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32363:34
+      1   50.0%          LazyCompile: *parseEntityName /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33129:33
+      1  100.0%            LazyCompile: *parseNonArrayType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:33948:35
+      1   50.0%          Function: ^parseIdentifier /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:32394:33
+      1  100.0%            Function: ^parseTypePredicatePrefix /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:34257:42
+      2    1.8%        Function: ^getUnionTypeFromSortedList /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61391:44
+      2  100.0%          Function: ^getUnionType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61284:30
+      1   50.0%            LazyCompile: *instantiateTypeWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63649:39
+      1   50.0%            Function: ^instantiateTypeWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63649:39
+      2    1.8%        Function: ^getIndexedAccessTypeOrUndefined /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:62404:49
+      2  100.0%          Function: ^getIndexedAccessType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:62388:38
+      1   50.0%            LazyCompile: *instantiateTypeWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63649:39
+      1   50.0%            Function: ^instantiateTypeWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63649:39
+      2    1.8%        Function: ^Module node:internal/modules/cjs/loader:172:16
+      2  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1   50.0%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+      1   50.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      2    1.8%        Function: ^FastBuffer node:internal/buffer:958:14
+      2  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1   50.0%            Function: ^createPool node:buffer:151:20
+      1   50.0%            Function: ^allocate node:buffer:398:18
+     78    2.7%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     63   80.8%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+     19   30.2%          Function: ~<anonymous> node:repl:1:1
+     19  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7   11.1%          Function: ~<anonymous> node:crypto:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5    7.9%          Function: ~<anonymous> node:http:1:1
+      5  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    6.3%          Function: ~<anonymous> node:tls:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    4.8%          Function: ~<anonymous> node:internal/child_process:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.2%          LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      2  100.0%            LazyCompile: ~get node:crypto:287:8
+      2    3.2%          Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.2%          Function: ~<anonymous> node:child_process:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.2%          Function: ~<anonymous> node:assert:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    3.2%          Function: ~<anonymous> node:_http_client:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          LazyCompile: ~lazyLoadStreams node:fs:2858:25
+      1  100.0%            LazyCompile: ~get ReadStream node:fs:3001:17
+      1    1.6%          LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1  100.0%            LazyCompile: ~getStdout node:internal/bootstrap/switches/is_main_thread:125:19
+      1    1.6%          Function: ~<anonymous> node:worker_threads:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:readline:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:module:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:internal/worker:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:internal/readline/callbacks:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:internal/crypto/util:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:internal/crypto/pbkdf2:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:dns:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:cluster:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:_tls_wrap:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:_tls_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.6%          Function: ~<anonymous> node:_http_server:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     10   12.8%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+     10  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+     10  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      5    6.4%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      5  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      5  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+     42    1.4%      Function: ^slice node:buffer:594:12
+     42  100.0%        Function: ^toString node:buffer:783:46
+     29   69.0%          Function: ^readFileSync node:fs:450:22
+     28   96.6%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    3.4%            LazyCompile: ~Module._extensions..json node:internal/modules/cjs/loader:1164:39
+      8   19.0%          Function: ^readFileWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:7334:36
+      8  100.0%            Function: ^readFile /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:7365:30
+      3    7.1%          LazyCompile: *readFileSync node:fs:450:22
+      2   66.7%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1   33.3%            LazyCompile: ~Module._extensions..json node:internal/modules/cjs/loader:1164:39
+      1    2.4%          Function: ^getValidatedString /home/jorgem/software/backendCourse/16. Log/node_modules/bson/lib/parser/deserializer.js:641:28
+      1  100.0%            Function: ^deserializeObject /home/jorgem/software/backendCourse/16. Log/node_modules/bson/lib/parser/deserializer.js:65:27
+      1    2.4%          Function: ^deserializeObject /home/jorgem/software/backendCourse/16. Log/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%            Function: ^deserializeObject /home/jorgem/software/backendCourse/16. Log/node_modules/bson/lib/parser/deserializer.js:65:27
+     33    1.1%      Function: ^stat node:internal/modules/cjs/loader:151:14
+     17   51.5%        Function: ^tryFile node:internal/modules/cjs/loader:384:17
+     17  100.0%          Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+     12   70.6%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      5   29.4%            Function: ^tryPackage node:internal/modules/cjs/loader:338:20
+     16   48.5%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     15   93.8%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     14   93.3%            Function: ^Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue /home/jorgem/software/backendCourse/16. Log/node_modules/@cspotcode/source-map-support/source-map-support.js:792:96
+      1    6.7%            LazyCompile: ~Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue /home/jorgem/software/backendCourse/16. Log/node_modules/@cspotcode/source-map-support/source-map-support.js:792:96
+      1    6.3%          LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+    286    4.7%    LazyCompile: *compileFunction node:vm:308:25
+    147   51.4%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+    147  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+    147  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+    147  100.0%            Function: ^require.extensions.<computed> /home/jorgem/software/backendCourse/16. Log/node_modules/ts-node/dist/index.js:840:40
+    139   48.6%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+    136   97.8%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+    136  100.0%          Function: ^require.extensions.<computed> /home/jorgem/software/backendCourse/16. Log/node_modules/ts-node/dist/index.js:840:40
+    103   75.7%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     33   24.3%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+      3    2.2%        LazyCompile: ~m._compile /home/jorgem/software/backendCourse/16. Log/node_modules/ts-node/dist/index.js:845:31
+      3  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      3  100.0%            Function: ^require.extensions.<computed> /home/jorgem/software/backendCourse/16. Log/node_modules/ts-node/dist/index.js:840:40
+
+    427    4.9%  __write@@GLIBC_2.2.5
+    319   74.7%    /home/jorgem/.nvm/versions/node/v16.15.0/bin/node
+     12    3.8%      /home/jorgem/.nvm/versions/node/v16.15.0/bin/node
+      1    8.3%        LazyCompile: ~resolveShort /home/jorgem/software/backendCourse/16. Log/node_modules/@mapbox/node-pre-gyp/node_modules/nopt/lib/nopt.js:384:23
+      1  100.0%          LazyCompile: ~parse /home/jorgem/software/backendCourse/16. Log/node_modules/@mapbox/node-pre-gyp/node_modules/nopt/lib/nopt.js:242:16
+      1  100.0%            LazyCompile: ~nopt /home/jorgem/software/backendCourse/16. Log/node_modules/@mapbox/node-pre-gyp/node_modules/nopt/lib/nopt.js:26:15
+      1    8.3%        LazyCompile: ~parse /home/jorgem/software/backendCourse/16. Log/node_modules/yargs-parser/build/index.cjs:108:10
+      1  100.0%          LazyCompile: ~yargsParser.detailed /home/jorgem/software/backendCourse/16. Log/node_modules/yargs-parser/build/index.cjs:1041:33
+      1  100.0%            LazyCompile: ~<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/yargs/build/index.cjs:1:56715
+      1    8.3%        LazyCompile: ~parse /home/jorgem/software/backendCourse/16. Log/node_modules/ts-node/dist/util.js:170:19
+      1  100.0%          LazyCompile: ~versionGteLt /home/jorgem/software/backendCourse/16. Log/node_modules/ts-node/dist/util.js:155:22
+      1  100.0%            Function: ~<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/ts-node/dist-raw/node-internalBinding-fs.js:1:1
+      1    8.3%        LazyCompile: ~mongoConn /home/jorgem/software/backendCourse/16. Log/src/containers/dbConfig.ts:8:25
+      1  100.0%          /home/jorgem/.nvm/versions/node/v16.15.0/bin/node
+      1  100.0%            /home/jorgem/.nvm/versions/node/v16.15.0/bin/node
+      1    8.3%        LazyCompile: ~extractPragmas /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:38992:28
+      1  100.0%          LazyCompile: ~processCommentPragmas /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:38876:35
+      1  100.0%            LazyCompile: ~parseSourceFileWorker /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:31676:39
+      1    8.3%        LazyCompile: ~escapeNonAsciiString /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:18132:34
+      1  100.0%          LazyCompile: ~getLiteralText /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:14899:28
+      1  100.0%            LazyCompile: ~getLiteralTextOfNode /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:114315:38
+      1    8.3%        LazyCompile: ~<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/yargs/build/index.cjs:1:50107
+      1  100.0%          LazyCompile: ~Xt /home/jorgem/software/backendCourse/16. Log/node_modules/yargs/build/index.cjs:1:28408
+      1  100.0%            LazyCompile: ~fe.Yargs /home/jorgem/software/backendCourse/16. Log/node_modules/yargs/build/index.cjs:1:61147
+      1    8.3%        LazyCompile: ~<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/mongodb/lib/connection_string.js:72:39
+      1  100.0%          LazyCompile: ~onresolve node:dns:207:19
+      1    8.3%        Function: ~<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:39097:11
+      1  100.0%          Function: ~<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:1:11
+      1  100.0%            LazyCompile: ~_ownModuleCompile /home/jorgem/software/backendCourse/16. Log/node_modules/v8-compile-cache-lib/v8-compile-cache.js:157:31
+      1    8.3%        Function: ^sameMap /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:653:21
+      1  100.0%          Function: ^getTypeWithThisArgument /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57892:41
+      1  100.0%            LazyCompile: *getApparentTypeOfIntersectionType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:59060:51
+      1    8.3%        Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    8.3%        Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            LazyCompile: *Module.require node:internal/modules/cjs/loader:997:36
+     79   18.5%    LazyCompile: *compileFunction node:vm:308:25
+     41   51.9%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     41  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+     41  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     41  100.0%            Function: ^require.extensions.<computed> /home/jorgem/software/backendCourse/16. Log/node_modules/ts-node/dist/index.js:840:40
+     38   48.1%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+     38  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     38  100.0%          Function: ^require.extensions.<computed> /home/jorgem/software/backendCourse/16. Log/node_modules/ts-node/dist/index.js:840:40
+     34   89.5%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      4   10.5%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+
+    273    3.1%  fwrite@@GLIBC_2.2.5
+    150   54.9%    LazyCompile: *compileFunction node:vm:308:25
+     87   58.0%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+     87  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     87  100.0%          Function: ^require.extensions.<computed> /home/jorgem/software/backendCourse/16. Log/node_modules/ts-node/dist/index.js:840:40
+     69   79.3%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+     18   20.7%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     63   42.0%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     63  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+     63  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     63  100.0%            Function: ^require.extensions.<computed> /home/jorgem/software/backendCourse/16. Log/node_modules/ts-node/dist/index.js:840:40
+    121   44.3%    /home/jorgem/.nvm/versions/node/v16.15.0/bin/node
+      3    2.5%      LazyCompile: ~createHash node:crypto:129:20
+      3  100.0%        LazyCompile: ~_moduleCompile /home/jorgem/software/backendCourse/16. Log/node_modules/v8-compile-cache-lib/v8-compile-cache.js:207:17
+      3  100.0%          LazyCompile: ~_ownModuleCompile /home/jorgem/software/backendCourse/16. Log/node_modules/v8-compile-cache-lib/v8-compile-cache.js:157:31
+      3  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      2    1.7%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:393:20
+      2  100.0%        LazyCompile: ~tryFile node:internal/modules/cjs/loader:384:17
+      2  100.0%          LazyCompile: ~finalizeEsmResolution node:internal/modules/cjs/loader:939:31
+      2  100.0%            LazyCompile: ~resolveExports node:internal/modules/cjs/loader:472:24
+
+    210    2.4%  /usr/lib/x86_64-linux-gnu/libc-2.31.so
+    129   61.4%    /home/jorgem/.nvm/versions/node/v16.15.0/bin/node
+     11    8.5%      /home/jorgem/.nvm/versions/node/v16.15.0/bin/node
+      2   18.2%        Function: ^<anonymous> node:internal/fs/utils:358:35
+      2  100.0%          LazyCompile: *readFileSync node:fs:450:22
+      2  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    9.1%        LazyCompile: ~setupTimestamps /home/jorgem/software/backendCourse/16. Log/node_modules/mongoose/lib/helpers/timestamps/setupTimestamps.js:9:42
+      1  100.0%          LazyCompile: ~Schema.setupTimestamp /home/jorgem/software/backendCourse/16. Log/node_modules/mongoose/lib/schema.js:1446:43
+      1  100.0%            LazyCompile: ~Schema /home/jorgem/software/backendCourse/16. Log/node_modules/mongoose/lib/schema.js:95:16
+      1    9.1%        LazyCompile: ~Schema.pathType /home/jorgem/software/backendCourse/16. Log/node_modules/mongoose/lib/schema.js:1384:37
+      1  100.0%          LazyCompile: ~Schema.virtual /home/jorgem/software/backendCourse/16. Log/node_modules/mongoose/lib/schema.js:1941:36
+      1  100.0%            LazyCompile: ~addIdGetter /home/jorgem/software/backendCourse/16. Log/node_modules/mongoose/lib/helpers/schema/idGetter.js:7:38
+      1    9.1%        LazyCompile: *forEach /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:374:21
+      1  100.0%          Function: ^bindEach /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:45203:26
+      1  100.0%            LazyCompile: *visitNodes /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:30665:24
+      1    9.1%        Function: ^serializeInto /home/jorgem/software/backendCourse/16. Log/node_modules/bson/lib/parser/serializer.js:550:23
+      1  100.0%          Function: ^serialize /home/jorgem/software/backendCourse/16. Log/node_modules/bson/lib/bson.js:111:19
+      1  100.0%            Function: ^toBin /home/jorgem/software/backendCourse/16. Log/node_modules/mongodb/lib/cmap/commands.js:82:10
+      1    9.1%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    9.1%        Function: ^instantiateSignatures /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:63272:39
+      1  100.0%          Function: ^resolveAnonymousTypeMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58365:45
+      1  100.0%            LazyCompile: *resolveStructuredTypeMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58697:46
+      1    9.1%        Function: ^getUnionTypeFromSortedList /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61391:44
+      1  100.0%          Function: ^getUnionType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:61284:30
+      1  100.0%            Function: ^mapType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:69920:25
+      1    9.1%        Function: ^Module node:internal/modules/cjs/loader:172:16
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    9.1%        Function: ^FastBuffer node:internal/buffer:958:14
+      1  100.0%          LazyCompile: ~alloc node:buffer:360:30
+      1  100.0%            Function: ~<anonymous> /home/jorgem/software/backendCourse/16. Log/node_modules/bson/lib/bson.js:1:1
+      5    3.9%      LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      3   60.0%        Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      3  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      3  100.0%            Function: ^Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue /home/jorgem/software/backendCourse/16. Log/node_modules/@cspotcode/source-map-support/source-map-support.js:792:96
+      2   40.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      2  100.0%          Function: ^require.extensions.<computed> /home/jorgem/software/backendCourse/16. Log/node_modules/ts-node/dist/index.js:840:40
+      2  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      4    3.1%      LazyCompile: *realpathSync node:fs:2425:22
+      3   75.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      3  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      3  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1   25.0%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue /home/jorgem/software/backendCourse/16. Log/node_modules/@cspotcode/source-map-support/source-map-support.js:792:96
+      2    1.6%      Function: ^__spreadArray /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:17:62
+      1   50.0%        Function: ^pathComponents /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:7803:28
+      1  100.0%          Function: ^getPathComponents /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:7840:31
+      1  100.0%            Function: ^containsPath /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:8112:26
+      1   50.0%        Function: ^concatenate /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:966:25
+      1  100.0%          Function: ^resolveTypeReferenceMembers /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:57948:45
+      1  100.0%            LazyCompile: *getPropertiesOfObjectType /home/jorgem/software/backendCourse/16. Log/node_modules/typescript/lib/typescript.js:58726:43
+     53   25.2%    LazyCompile: *compileFunction node:vm:308:25
+     38   71.7%      LazyCompile: *Module._compile node:internal/modules/cjs/loader:1059:37
+     38  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     38  100.0%          Function: ^require.extensions.<computed> /home/jorgem/software/backendCourse/16. Log/node_modules/ts-node/dist/index.js:840:40
+     31   81.6%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      7   18.4%            LazyCompile: *Module._load node:internal/modules/cjs/loader:757:24
+     15   28.3%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+     15  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+     15  100.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     15  100.0%            Function: ^require.extensions.<computed> /home/jorgem/software/backendCourse/16. Log/node_modules/ts-node/dist/index.js:840:40
+
+    114    1.3%  epoll_pwait@@GLIBC_2.6
+
